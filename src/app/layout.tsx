@@ -1,6 +1,6 @@
-import { Navbar } from "@/components/Header/header";
+import { Navbar } from "@/components/Navbar/navbar";
 import { Inter } from "next/font/google";
-
+import './style.css';
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
