@@ -33,7 +33,9 @@ const roboto = Roboto({
 export function Navbar() {
   return (
     <header style={roboto.style} className={styles.containerHeader}>
-      <h1 className={styles.logo}>Volvo</h1>
+     <h1 className={styles.logo}>
+     <Link  href="/" >Volvo</Link>
+     </h1>
       <nav>
         <ul className={styles.menuList}>
           <li className={styles.itemMenu}>
