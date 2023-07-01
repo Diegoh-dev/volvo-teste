@@ -1,3 +1,4 @@
+import { ChevronCircle } from '../ChevronCircled/chevronCircled';
 import styles from './buttonNavigator.module.scss';
 
 interface ButtonsNavigatorProps{
@@ -18,8 +19,14 @@ export function ButtonsNavigator({carousel}:ButtonsNavigatorProps) {
   }
   return (
     <div className={styles.buttons}>
-      <button onClick={handleLeftClick}>{"<"} </button>
-      <button onClick={handleRightClick}>{">"}</button>
+      <button style={{
+         transform: 'rotate(180deg)',
+      }}  onClick={handleLeftClick}>
+        <ChevronCircle />{" "}
+      </button>
+      <button onClick={handleRightClick}>
+        <ChevronCircle />
+      </button>
     </div>
   );
 }
