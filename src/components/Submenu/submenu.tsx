@@ -9,7 +9,8 @@ export function SubMenu() {
       <div className={styles.filterButtons}>
         <button className={styles.button}>Todos (6)</button>
         <button className={styles.button}>SUV (5)</button>
-        <button className={styles.button}>Crossover (1)</button>
+        <button className={styles.button}>Estate (1)</button>
+        <button className={styles.button}>Sedan (1)</button>
       </div>
     </section>
   );
