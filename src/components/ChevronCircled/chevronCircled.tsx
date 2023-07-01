@@ -6,7 +6,7 @@ export function ChevronCircle() {
         cy="20"
         r="18.5"
         fill="white"
-        stroke="#333"
+        stroke="#2C619E"
         stroke-width="1"
       ></circle>
       <rect
@@ -17,7 +17,7 @@ export function ChevronCircle() {
         rx="0.25"
         transform="rotate(-135 24.9141 20.3457)"
         fill="none"
-        stroke="#333"
+        stroke="#2C619E"
         stroke-width="1"
       ></rect>
       <rect
@@ -28,7 +28,7 @@ export function ChevronCircle() {
         rx="0.25"
         transform="rotate(-45 17.4942 27.0703)"
         fill="none"
-        stroke="#333"
+        stroke="#2C619E"
         stroke-width="1"
       ></rect>
     </svg>
