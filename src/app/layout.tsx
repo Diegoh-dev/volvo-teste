@@ -1,7 +1,11 @@
 import { Navbar } from "@/components/Navbar/navbar";
-import { Inter } from "next/font/google";
+import { Inter, Roboto } from "next/font/google";
 import './style.css';
 const inter = Inter({ subsets: ["latin"] });
+const roboto = Roboto({
+  weight: ["400", "500", "700"],
+  subsets: ["latin"],
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -15,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body suppressHydrationWarning={true} className={inter.className}>
+      <body suppressHydrationWarning={true} className={roboto.className}>
         <Navbar/>
         {children}
         </body>
