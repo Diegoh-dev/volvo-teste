@@ -1,3 +1,4 @@
+import { useState } from "react";
 import styles from "./submenu.module.scss";
 
 export function SubMenu({ listCars, setListCars }: any) {
@@ -18,27 +19,47 @@ export function SubMenu({ listCars, setListCars }: any) {
     }
   }
 
+  const [filterintex, setFilterintex] = useState(0);
+
   return (
     <section className={styles.containerSubmenu}>
       {/* colocar um filtro em algum lugar */}
       <h1>Todos os modelos Recharge</h1>
 
       <div className={styles.filterButtons}>
-        <button onClick={() => filterTypeCar()} className={styles.button}>
+        <button
+          onClick={() => {
+            filterTypeCar();
+            setFilterintex(0);
+          }}
+          className={filterintex == 0 ? styles.buttonActive : styles.button}
+        >
           Todos{" "}
         </button>
-        <button onClick={() => filterTypeCar("suv")} className={styles.button}>
+        <button
+          onClick={() => {
+            filterTypeCar("suv");
+            setFilterintex(1);
+          }}
+          className={filterintex == 1 ? styles.buttonActive : styles.button}
+        >
           SUV{" "}
         </button>
         <button
-          onClick={() => filterTypeCar("estate")}
-          className={styles.button}
+          onClick={() => {
+            filterTypeCar("estate");
+            setFilterintex(2);
+          }}
+          className={filterintex == 2 ? styles.buttonActive : styles.button}
         >
           Estate{" "}
         </button>
         <button
-          onClick={() => filterTypeCar("sedan")}
-          className={styles.button}
+          onClick={() => {
+            filterTypeCar("sedan");
+            setFilterintex(3);
+          }}
+          className={filterintex == 3 ? styles.buttonActive : styles.button}
         >
           Sedan{" "}
         </button>
