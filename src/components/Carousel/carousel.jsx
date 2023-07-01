@@ -6,19 +6,20 @@ import { Links } from "../Links/links";
 import { ButtonsNavigator } from "../ButtonsNavigator/navigator";
 import Image from "next/image";
 
-export function Carousel() {
-  const [listCars, setListCars] = useState([]);
-  const carousel = useRef(null);
 
-  async function getDate() {
-    const response = await fetch("api/cars.json");
-    const data = await response.json();
-    setListCars(data);
-  }
+export function Carousel({carousel,listCars}) {
+  // const [listCars, setListCars] = useState([]);
+  // const carousel = useRef(null);
 
-  useEffect(() => {
-    getDate();
-  }, []);
+  // async function getDate() {
+  //   const response = await fetch("api/cars.json");
+  //   const data = await response.json();
+  //   setListCars(data);
+  // }
+
+  // useEffect(() => {
+  //   getDate();
+  // }, []);
 
   const handleLeftClick = (e) => {
     e.preventDefault();
