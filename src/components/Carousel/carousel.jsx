@@ -35,17 +35,13 @@ export function Carousel(){
 
   return (
     <div className={styles.container}> 
-      {/* <div className={styles.logo}>
-      Volvo
-      </div> */}
-
       <div ref={carousel} className={styles.carousel}>
       {listCars.map((car) => {
-        const {id,modelName,bodyType,modelType,imageUrl} = car;
+        const {id,modelName,bodyType,modelType,imageUrl,price} = car;
         
         return(
             <div key={id} className={styles.item}>
-              <Info bodyType={bodyType} modelName={modelName}/>
+              <Info bodyType={bodyType} modelName={modelName} modelType={modelType} price={price}/>
             <div className={styles.image}>
             <img src={imageUrl} alt="carros" />
             </div>
@@ -54,11 +50,6 @@ export function Carousel(){
          )
       })}
       </div>
-
-      {/* <div className={styles.buttons}>
-        <button onClick={handleLeftClick}>{'<'} </button>
-        <button onClick={handleRightClick}>{'>'}</button>
-      </div> */}
       <ButtonsNavigator carousel={carousel}/>
     </div>
   )
