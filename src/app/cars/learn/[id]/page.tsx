@@ -32,15 +32,13 @@ export default function Learn({ params, imageUrl }: LearnProps) {
       <section
         style={{
           display: "flex",
-          alignItems: "center",
           justifyContent: "center",
-          width: "100%",
-          objectFit: "contain",
         }}
       >
         <Image
+        style={{}}
           width={500}
-          height={500}
+          height={400}
           src="/images/xc90_recharge.jpg"
           alt={id}
         />
