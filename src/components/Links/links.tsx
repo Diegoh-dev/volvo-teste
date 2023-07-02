@@ -14,7 +14,8 @@ export function Links({id}:LinksProps){
       <Link href={`/cars/learn/${id}`}>
         Conheça <Chevron/>
       </Link>
-      <Link href='/cars/learn'>
+      <Link href={`/cars/shop/${id}`}>
+      
         Comprar <Chevron/>
       </Link>
 

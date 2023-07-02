@@ -2,13 +2,21 @@ import { Chevron } from "@/components/Chevron/chevron";
 import Image from "next/image";
 import styles from './shop.module.scss';
 
-export default function Shop() {
+interface ShopProps{
+  params: {
+    id: string;
+  };
+}
+
+export default function Shop({params}:ShopProps) {
+  const {id} = params;
+  console.log('params shop:',id);
   return (
     <>
       <section className={styles.containerTop}>
         <div className={styles.cardOneTop}>
           <h1>
-            Comprar o XC90 Recharge
+            Comprar o {id} Recharge
           </h1>
           <div>
             <Image
