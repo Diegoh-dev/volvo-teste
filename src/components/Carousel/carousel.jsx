@@ -61,7 +61,7 @@ export function Carousel({carousel,listCars}) {
                   priority
                 />
               </div>
-              <Links id={id}/>
+              <Links id={id} imageUrl={imageUrl}/>
             </div>
           );
         })}
