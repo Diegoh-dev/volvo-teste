@@ -10,7 +10,6 @@ export default function Learn({ params }: LearnProps) {
   const { id } = params;
   return (
     <div className={styles.container}>
-      {/* Next 13 {id} */}
       <header className={styles.header}>
         <nav>
           <ul className={styles.list}>
@@ -28,11 +27,10 @@ export default function Learn({ params }: LearnProps) {
             </li>
           </ul>
         </nav>
-        <div>
-          <button>
+      
+          <button className={styles.buttonInfo}>
             MANTENHA-ME INFORMADO
           </button>
-        </div>
       </header>
     </div>
   );
