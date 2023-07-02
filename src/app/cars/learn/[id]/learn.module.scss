@@ -1,0 +1,22 @@
+.container{
+ width: 80%;
+ margin: 0 auto;
+
+ .header{
+  width: 100%;
+  align-items: center;
+  display: flex;
+  height: 64px;
+  border: 1px solid red;
+  justify-content: space-between;
+
+  nav{
+    .list{
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      gap: 1rem;
+    }
+  }
+ }
+}
