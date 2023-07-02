@@ -33,6 +33,7 @@ export default function Learn({ params, imageUrl }: LearnProps) {
         style={{
           display: "flex",
           justifyContent: "center",
+          // maxWidth:'1300px',
         }}
       >
         <Image
@@ -52,6 +53,7 @@ export default function Learn({ params, imageUrl }: LearnProps) {
           justifyContent: "center",
           flexDirection: "column",
           gap: "2rem",
+          // maxWidth:'1300px',
         }}
       >
         <div

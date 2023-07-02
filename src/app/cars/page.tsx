@@ -18,7 +18,7 @@ export default function Cars(){
   }, []);
 
   return (
-    <div>
+    <div style={{maxWidth:'1300px'}}>
      <SubMenu listCars={listCars} setListCars={setListCars}/>
      <Carousel carousel={carousel} listCars={listCars}/>
     </div>
