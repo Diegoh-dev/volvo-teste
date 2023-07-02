@@ -19,7 +19,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body suppressHydrationWarning={true} className={roboto.className}>
+      <body style={{
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+      }} suppressHydrationWarning={true} className={roboto.className}>
         <Navbar/>
         {children}
         </body>
