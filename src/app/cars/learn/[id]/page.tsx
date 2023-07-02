@@ -64,16 +64,22 @@ export default function Learn({ params, imageUrl }: LearnProps) {
             justifyContent: "center",
             flexDirection: "column",
             gap: ".5rem",
+           
           }}
         >
           <h3
             style={{
               textTransform: "uppercase",
+              fontSize:'32px',
             }}
           >
             <strong>{id}</strong>.
           </h3>
-          <h2>Excelente desempenho elétrico num formato compacto.</h2>
+          <h2 style={{
+            textAlign:'center',
+            fontSize:'30px',
+            color: "rgba(0, 0, 0, 0.64)",
+          }}>Excelente desempenho elétrico <br /> num formato compacto.</h2>
         </div>
 
         <article
