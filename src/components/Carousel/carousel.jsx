@@ -23,12 +23,10 @@ export function Carousel({carousel,listCars}) {
 
   const handleLeftClick = (e) => {
     e.preventDefault();
-    console.log(carousel.current.offsetWidth);
     carousel.current.scrollLeft -= carousel.current.offsetWidth;
   };
   const handleRightClick = (e) => {
     e.preventDefault();
-    console.log(carousel.current.offsetWidth);
     carousel.current.scrollLeft += carousel.current.offsetWidth;
   };
 

@@ -2,7 +2,6 @@ import { useState } from "react";
 import styles from "./submenu.module.scss";
 
 export function SubMenu({ listCars, setListCars }: any) {
-  console.log("listCars:", listCars);
 
   async function filterTypeCar(type?: string) {
     const response = await fetch("api/cars.json");
@@ -13,7 +12,6 @@ export function SubMenu({ listCars, setListCars }: any) {
         return car.bodyType === type;
       });
       setListCars(filterCar);
-      console.log("filterCar:", filterCar);
     } else {
       setListCars(data);
     }

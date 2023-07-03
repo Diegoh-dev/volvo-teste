@@ -10,7 +10,6 @@ interface ShopProps{
 
 export default function Shop({params}:ShopProps) {
   const {id} = params;
-  console.log('params shop:',id);
   return (
     <>
       <section className={styles.containerTop}>

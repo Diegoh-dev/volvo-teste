@@ -11,7 +11,6 @@ interface LearnProps {
 
 export default function Learn({ params, imageUrl }: LearnProps) {
   const { id } = params;
-  console.log("imageUrl", imageUrl);
   return (
     <div className={styles.container}>
       <header className={styles.header}>
