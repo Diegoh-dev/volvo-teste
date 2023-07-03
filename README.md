@@ -46,6 +46,7 @@ Essa aplicação é um teste para uma vaga front-end.
 - [x] NEXT 13
 - [x] TYPESCRIPT
 - [x] MATERIAL UI
+- [x] SCSS
 
 
 ## 🤝 Colaborador
