@@ -38,8 +38,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 Essa aplicação é um teste para uma vaga front-end.
 
-
-### Rotas
+<img src="./docs/ProductList-Desktop.png" alt="exemplo do projeto">
 
 
 ## 🚀 TECNOLOGIAS UTILIZADAS:
