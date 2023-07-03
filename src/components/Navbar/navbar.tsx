@@ -40,11 +40,11 @@ export function Navbar() {
         <ul className={styles.menuList}>
           <li className={styles.itemMenu}>
             {/* <ConfigProvider config={config}> */}
-            <Link href="/">Nossos carros</Link>
+            <Link href="/cars">Nossos carros</Link>
             {/* </ConfigProvider> */}
           </li>
           <li className={styles.itemMenu}>
-            <Link href="/">Menu</Link>
+            <Link href="#">Menu</Link>
           </li>
         </ul>
       </nav>
