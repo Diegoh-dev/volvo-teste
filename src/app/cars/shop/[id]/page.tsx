@@ -20,11 +20,6 @@ export default function Shop({params}:ShopProps) {
           </h1>
           <div>
             <Image
-              // style={{
-              //   backdropFilter: "none",
-              //   width: "100%",
-              //   objectFit: "contain",
-              // }}
               width={400}
               height={400}
               src="/images/xc90_recharge.jpg"
