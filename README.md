@@ -38,8 +38,6 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 Essa aplicação é um teste para uma vaga front-end.
 
-<img src="./docs/ProductList-Desktop.png" alt="imagem do projeto">
-
 
 ### Rotas
 
