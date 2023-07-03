@@ -5,29 +5,27 @@ import { Info } from "../Info/info";
 import { Links } from "../Links/links";
 import { ButtonsNavigator } from "../ButtonsNavigator/navigator";
 import Image from "next/image";
+import { ListCars } from "@/app/cars/page";
+
+interface CarouselProps{
+  listCars: ListCars[];
+  carousel:any;
+}
 
 
-export function Carousel({carousel,listCars}) {
-  // const [listCars, setListCars] = useState([]);
-  // const carousel = useRef(null);
+export function Carousel({carousel,listCars}:CarouselProps) {
 
-  // async function getDate() {
-  //   const response = await fetch("api/cars.json");
-  //   const data = await response.json();
-  //   setListCars(data);
-  // }
-
-  // useEffect(() => {
-  //   getDate();
-  // }, []);
-
-  const handleLeftClick = (e) => {
+  const handleLeftClick = (e:Event) => {
     e.preventDefault();
-    carousel.current.scrollLeft -= carousel.current.offsetWidth;
+    if(carousel){
+      carousel.current.scrollLeft -= carousel.current.offsetWidth;
+    }
   };
-  const handleRightClick = (e) => {
+  const handleRightClick = (e:Event) => {
     e.preventDefault();
-    carousel.current.scrollLeft += carousel.current.offsetWidth;
+    if(carousel){
+      carousel.current.scrollLeft += carousel.current.offsetWidth;
+    }
   };
 
   return (
@@ -59,7 +57,7 @@ export function Carousel({carousel,listCars}) {
                   priority
                 />
               </div>
-              <Links id={id} imageUrl={imageUrl}/>
+              <Links id={id}/>
             </div>
           );
         })}

@@ -1,7 +1,12 @@
 import { useState } from "react";
 import styles from "./submenu.module.scss";
+import { ListCars } from "@/app/cars/page";
 
-export function SubMenu({ listCars, setListCars }: any) {
+interface SubMenuProps{
+  setListCars:(value:ListCars[]) => void;
+}
+
+export function SubMenu({ setListCars }: SubMenuProps) {
 
   async function filterTypeCar(type?: string) {
     const response = await fetch("api/cars.json");
@@ -21,7 +26,6 @@ export function SubMenu({ listCars, setListCars }: any) {
 
   return (
     <section className={styles.containerSubmenu}>
-      {/* colocar um filtro em algum lugar */}
       <h1>Todos os modelos Recharge</h1>
 
       <div className={styles.filterButtons}>
