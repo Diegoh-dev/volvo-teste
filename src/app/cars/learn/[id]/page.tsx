@@ -29,15 +29,9 @@ export default function Learn({ params, imageUrl }: LearnProps) {
         <button className={styles.buttonInfo}>MANTENHA-ME INFORMADO</button>
       </header>
 
-      <section
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          // maxWidth:'1300px',
-        }}
-      >
+      <section className={styles.containerImage}>
         <Image
-        style={{}}
+          style={{}}
           width={500}
           height={400}
           src="/images/xc90_recharge.jpg"
@@ -45,247 +39,63 @@ export default function Learn({ params, imageUrl }: LearnProps) {
         />
       </section>
 
-      <section
-        style={{
-          width: "100%",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          flexDirection: "column",
-          gap: "2rem",
-          // maxWidth:'1300px',
-        }}
-      >
-        <div
-          style={{
-            marginTop: "1.5rem",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            flexDirection: "column",
-            gap: ".5rem",
-           
-          }}
-        >
-          <h3
-            style={{
-              textTransform: "uppercase",
-              fontSize:'32px',
-            }}
-          >
+      <section className={styles.containerinfoCar}>
+        <div className={styles.descrition}>
+          <h3>
             <strong>{id}</strong>.
           </h3>
-          <h2 style={{
-            textAlign:'center',
-            fontSize:'30px',
-            color: "rgba(0, 0, 0, 0.64)",
-          }}>Excelente desempenho elétrico <br /> num formato compacto.</h2>
+          <h2>
+            Excelente desempenho elétrico <br /> num formato compacto.
+          </h2>
         </div>
 
-        <article
-          style={{
-            display: "flex",
-            width: "100%",
-            alignItems: "center",
-            justifyContent: "space-around",
-            // gap:'2rem',
-            flexWrap: "wrap",
-            marginBottom: "2rem",
-          }}
-        >
-          <div
-            style={{
-              maxWidth: "150px",
-            }}
-          >
-            <h4
-              style={{
-                fontSize: "40px",
-              }}
-            >
-              480km
-            </h4>
-            <p
-              style={{
-                color: "rgba(0, 0, 0, 0.64)",
-              }}
-            >
-              Autonomia elétrica <br />
-              (Até)
-            </p>
+        <article className={styles.princInfo}>
+          <div className={styles.card1}>
+            <h4>480km</h4>
+            <p>Autonomia elétrica</p>
           </div>
 
-          <div
-            style={{
-              maxWidth: "180px",
-              marginTop: "1rem",
-            }}
-          >
-            <h4
-              style={{
-                fontSize: "40px",
-                whiteSpace: "nowrap",
-              }}
-            >
-              Cerca de 30min
-            </h4>
-            <p
-              style={{
-                color: "rgba(0, 0, 0, 0.64)",
-              }}
-            >
-              Estimativa de tempo do carregamento rápido DC (10%-80%)
-            </p>
+          <div className={styles.card2}>
+            <h4>Cerca de 30min</h4>
+            <p>Estimativa de tempo do carregamento rápido DC (10%-80%)</p>
           </div>
-          <div
-            style={{
-              maxWidth: "150px",
-            }}
-          >
-            <h4
-              style={{
-                fontSize: "40px",
-              }}
-            >
-              15.7kWh
-            </h4>
-            <p
-              style={{
-                color: "rgba(0, 0, 0, 0.64)",
-              }}
-            >
-              Consumo de energia (por 100km)
-            </p>
+
+          <div className={styles.card3}>
+            <h4>15.7kWh</h4>
+            <p>Consumo de energia (por 100km)</p>
           </div>
-          <div
-            style={{
-              maxWidth: "150px",
-            }}
-          >
-            <h4
-              style={{
-                fontSize: "40px",
-              }}
-            >
-              5.3s
-            </h4>
-            <p
-              style={{
-                color: "rgba(0, 0, 0, 0.64)",
-              }}
-            >
-              Aceleração (0-100 km/h)
-            </p>
+
+          <div className={styles.card4}>
+            <h4>5.3s</h4>
+            <p>Aceleração (0-100 km/h)</p>
           </div>
         </article>
 
-        <article
-          style={{
-            display: "flex",
-            width: "100%",
-            alignItems: "center",
-            justifyContent: "space-around",
-            // gap:'2rem',
-            flexWrap: "wrap",
-            marginBottom: "2rem",
-          }}
-        >
+        <article className={styles.infoInfe}>
           {/* card 1 */}
-          <div style={{
-            display:'flex',
-            flexDirection:'column',
-            gap:'1rem',
-          }}>
-            <div
-              style={{
-                display: "flex",
-                gap: "1rem",
-                alignItems: "center",
-                minWidth:'450px',
-                height:'100px',
-                // border:'1px solid red',
-                // padding:'1rem',
-              }}
-            >
-              <div style={{
-                backgroundColor:'#FAFAFA',
-                // flexGrow:'1',
-               display:'flex',
-               alignItems:'center',
-               justifyContent:'center',
-               width:'20%',
-               height:'100%',
-               borderRadius:'20px',
-              }}>
-
-                <TimeToLeaveIcon fontSize="large"/>
+          <div className={styles.card}>
+            <div className={styles.container}>
+              <div className={styles.icone}>
+                <TimeToLeaveIcon fontSize="large" />
               </div>
-              <div style={{
-                flexGrow:'1',
-                display:'flex',
-                flexDirection:'column',
-                gap:'.5rem',
-              }}>
-                <h4
-                  style={{
-                    fontSize: "20px",
-                  }}
-                >
-                  Soundbar
-                </h4>
-                <p
-                  style={{
-                    color: "rgba(0, 0, 0, 0.64)",
-                  }}
-                >
+
+              <div className={styles.content}>
+                <h4>Soundbar</h4>
+                <p>
                   A elegante soundbar é o centro de um <br /> sistema de áudio
                   de alta performance.
                 </p>
               </div>
             </div>
 
-            <div
-              style={{
-                display: "flex",
-                gap: "1rem",
-                alignItems: "center",
-                minWidth:'450px',
-                height:'100px',
-                // border:'1px solid red',
-                // padding:'1rem',
-              }}
-            >
-              <div style={{
-                backgroundColor:'#FAFAFA',
-                // flexGrow:'1',
-               display:'flex',
-               alignItems:'center',
-               justifyContent:'center',
-               width:'20%',
-               height:'100%',
-               borderRadius:'20px',
-              }}>
-                
-                <TimeToLeaveIcon fontSize="large"/>
+            <div className={styles.container}>
+              <div className={styles.icone}>
+                <TimeToLeaveIcon fontSize="large" />
               </div>
-              <div style={{
-                flexGrow:'1',
-                display:'flex',
-                flexDirection:'column',
-                gap:'.5rem',
-              }}>
-                <h4
-                  style={{
-                    fontSize: "20px",
-                  }}
-                >
-                  Soundbar
-                </h4>
-                <p
-                  style={{
-                    color: "rgba(0, 0, 0, 0.64)",
-                  }}
-                >
+
+              <div className={styles.content}>
+                <h4>Soundbar</h4>
+                <p>
                   A elegante soundbar é o centro de um <br /> sistema de áudio
                   de alta performance.
                 </p>
@@ -294,101 +104,29 @@ export default function Learn({ params, imageUrl }: LearnProps) {
           </div>
 
           {/* card 2 */}
-          <div style={{
-            display:'flex',
-            flexDirection:'column',
-            gap:'1rem',
-          }}>
-          <div
-              style={{
-                display: "flex",
-                gap: "1rem",
-                alignItems: "center",
-                minWidth:'450px',
-                height:'100px',
-                // border:'1px solid red',
-                // padding:'1rem',
-              }}
-            >
-              <div style={{
-                backgroundColor:'#FAFAFA',
-                // flexGrow:'1',
-               display:'flex',
-               alignItems:'center',
-               justifyContent:'center',
-               width:'20%',
-               height:'100%',
-               borderRadius:'20px',
-              }}>
-                
-                <TimeToLeaveIcon fontSize="large"/>
+          <div className={styles.card}>
+            <div className={styles.container}>
+              <div className={styles.icone}>
+                <TimeToLeaveIcon fontSize="large" />
               </div>
-              <div style={{
-                flexGrow:'1',
-                display:'flex',
-                flexDirection:'column',
-                gap:'.5rem',
-              }}>
-                <h4
-                  style={{
-                    fontSize: "20px",
-                  }}
-                >
-                  Soundbar
-                </h4>
-                <p
-                  style={{
-                    color: "rgba(0, 0, 0, 0.64)",
-                  }}
-                >
+
+              <div className={styles.content}>
+                <h4>Soundbar</h4>
+                <p>
                   A elegante soundbar é o centro de um <br /> sistema de áudio
                   de alta performance.
                 </p>
               </div>
             </div>
 
-            <div
-              style={{
-                display: "flex",
-                gap: "1rem",
-                alignItems: "center",
-                minWidth:'450px',
-                height:'100px',
-                // border:'1px solid red',
-                // padding:'1rem',
-              }}
-            >
-              <div style={{
-                backgroundColor:'#FAFAFA',
-                // flexGrow:'1',
-               display:'flex',
-               alignItems:'center',
-               justifyContent:'center',
-               width:'20%',
-               height:'100%',
-               borderRadius:'20px',
-              }}>
-                
-                <TimeToLeaveIcon fontSize="large"/>
+            <div className={styles.container}>
+              <div className={styles.icone}>
+                <TimeToLeaveIcon fontSize="large" />
               </div>
-              <div style={{
-                flexGrow:'1',
-                display:'flex',
-                flexDirection:'column',
-                gap:'.5rem',
-              }}>
-                <h4
-                  style={{
-                    fontSize: "20px",
-                  }}
-                >
-                  Soundbar
-                </h4>
-                <p
-                  style={{
-                    color: "rgba(0, 0, 0, 0.64)",
-                  }}
-                >
+
+              <div className={styles.content}>
+                <h4>Soundbar</h4>
+                <p>
                   A elegante soundbar é o centro de um <br /> sistema de áudio
                   de alta performance.
                 </p>
